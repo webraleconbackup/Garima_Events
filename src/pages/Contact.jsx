@@ -208,16 +208,14 @@ function Contact() {
 
         <section>
           <iframe
-            title='Gurugram Map'
-            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d562997.0421775718!2d76.73217822804476!3d28.481993057245187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d183ec172b3d3%3A0xddd690bf98f2c6a4!2sGurugram%2C%20Haryana!5e0!3m2!1sen!2sin!4v1721840037395!5m2!1sen!2sin'
+            title='Gurgaon Map'
+            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.6119678956236!2d77.01226737509262!3d28.6430193756577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d187c9ddfb2d7%3A0xf9582b2ff1f908db!2sBhawani%20Enclave%2C%20Sector%209%2C%20Gurugram%2C%20Haryana%20122001!5e0!3m2!1sen!2sin!4v1733735180000!5m2!1sen!2sin'
             width='100%'
             height='400'
-            style={{ border: 0 }}
             allowFullScreen=''
             loading='lazy'
-            referrerPolicy='no-referrer-when-downgrade'
-            className='rounded-xl'
-          />
+            className='rounded-xl border'
+          ></iframe>
         </section>
       </div>
     </>

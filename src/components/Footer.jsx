@@ -131,8 +131,7 @@ const Footer = () => {
         </div>
 
         <div className='px-4 text-center text-xs md:text-sm text-gray-400 mt-10 border-gray-700 pt-4 pb-6'>
-          © 2023 by Garima Decoration All Rights Reserved
-          <Link to='https://webralecon.com/'> Designed by the Webralecon India</Link>
+          © 2023 by Garima Decoration All Rights Reserved Designed by the Webralecon India
         </div>
       </footer>
     </>

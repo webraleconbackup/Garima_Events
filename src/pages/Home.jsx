@@ -1,4 +1,4 @@
-import React, { useState, } from 'react';
+import React, { useState } from 'react';
 import {
   homefirstSection,
   homeHeroSection,
@@ -35,10 +35,8 @@ import {
 import { Link } from 'react-router-dom';
 
 const Home = () => {
-
-  const phoneNumber = "+919509720327"
-  const message = "I am interested in your service"
-
+  const phoneNumber = '+919509720327';
+  const message = 'I am interested in your service';
 
   const [current, setCurrent] = useState(0);
   const links = [
@@ -48,42 +46,40 @@ const Home = () => {
     { icon: <FaYoutube />, label: 'Youtube' },
   ];
 
- const [formData, setFormData] = useState({
-     firstName: '',
-     lastName: '',
-     phone: '',
-     email: '',
-     message: '',
-   });
- 
-   const handleChange = (e) => {
-     setFormData({
-       ...formData,
-       [e.target.name]: e.target.value,
-     });
-   };
- 
-   const handleSubmit = (e) => {
-     e.preventDefault();
- 
-     const { firstName, lastName, phone, email, message } = formData;
- 
-  
-     const whatsappMessage =
-       `Name: ${firstName} ${lastName}\n` +
-       `Phone: ${phone}\n` +
-       `Email: ${email}\n` +
-       `Message: ${message}`;
- 
-     const encodedMessage = encodeURIComponent(whatsappMessage);
- 
-    
-     const yourPhoneNumber = '919509720327';
- 
-     const whatsappURL = `https://wa.me/${yourPhoneNumber}?text=${encodedMessage}`;
- 
-     window.open(whatsappURL, '_blank');
-   };
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    phone: '',
+    email: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const { firstName, lastName, phone, email, message } = formData;
+
+    const whatsappMessage =
+      `Name: ${firstName} ${lastName}\n` +
+      `Phone: ${phone}\n` +
+      `Email: ${email}\n` +
+      `Message: ${message}`;
+
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+
+    const yourPhoneNumber = '919509720327';
+
+    const whatsappURL = `https://wa.me/${yourPhoneNumber}?text=${encodedMessage}`;
+
+    window.open(whatsappURL, '_blank');
+  };
 
   return (
     <div className='w-full mb-10'>
@@ -157,10 +153,12 @@ const Home = () => {
         </Swiper>
 
         {/*  ***********       2nd  section     **********  */}
-        <section>
+        {/* <section>
           <div className='mt-14'>
-            <h1 className='text-2xl md:text-3xl font-semibold pb-2'>Our Features</h1>
-          <hr className='py-6'/>
+            <h1 className='text-2xl md:text-3xl font-semibold pb-2'>
+              Our Features
+            </h1>
+            <hr className='py-6' />
           </div>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-6 mb-10'>
             {homeSecondSection.map((card, index) => (
@@ -175,11 +173,11 @@ const Home = () => {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
 
         {/*  *******    3rd Section     ************ */}
 
-        <section className='pb-6 px-2'>
+        <section className='pb-6 pt-14 px-2'>
           <h2 className='text-2xl md:text-3xl mb-2 font-semibold'>
             Happy Republic Day
           </h2>
@@ -220,7 +218,11 @@ const Home = () => {
                       </Link>
                     </span>
                     <span>
-                     <Link to={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}>
+                      <Link
+                        to={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+                          message
+                        )}`}
+                      >
                         <FaWhatsapp className='text-[#ED52DA] text-3xl mt-[5px]' />
                       </Link>
                     </span>
@@ -271,7 +273,11 @@ const Home = () => {
                       </Link>
                     </span>
                     <span>
-                      <Link to={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}>
+                      <Link
+                        to={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+                          message
+                        )}`}
+                      >
                         <FaWhatsapp className='text-[#ED52DA] text-3xl mt-[5px]' />
                       </Link>
                     </span>
@@ -318,11 +324,15 @@ const Home = () => {
                     <span>
                       <Link to='tel:+91 9509720327'>
                         {' '}
-                       <FaPhone className='text-[#ED52DA] text-2xl mt-[5px]' />
+                        <FaPhone className='text-[#ED52DA] text-2xl mt-[5px]' />
                       </Link>
                     </span>
                     <span>
-                      <Link to={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}>
+                      <Link
+                        to={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+                          message
+                        )}`}
+                      >
                         <FaWhatsapp className='text-[#ED52DA] text-3xl mt-[5px]' />
                       </Link>
                     </span>
@@ -372,7 +382,11 @@ const Home = () => {
                       </Link>
                     </span>
                     <span>
-                      <Link to={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}>
+                      <Link
+                        to={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+                          message
+                        )}`}
+                      >
                         <FaWhatsapp className='text-[#ED52DA] text-3xl mt-[5px]' />
                       </Link>
                     </span>
@@ -422,7 +436,11 @@ const Home = () => {
                       </Link>
                     </span>
                     <span>
-                      <Link to={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}>
+                      <Link
+                        to={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+                          message
+                        )}`}
+                      >
                         {' '}
                         <FaWhatsapp className='text-[#ED52DA] text-3xl mt-[5px]' />
                       </Link>
@@ -475,7 +493,11 @@ const Home = () => {
                       </Link>
                     </span>
                     <span>
-                      <Link to={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}>
+                      <Link
+                        to={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+                          message
+                        )}`}
+                      >
                         <FaWhatsapp className='text-[#ED52DA] text-3xl mt-[5px]' />
                       </Link>
                     </span>
@@ -526,7 +548,11 @@ const Home = () => {
                       </Link>
                     </span>
                     <span>
-                      <Link to={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}>
+                      <Link
+                        to={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+                          message
+                        )}`}
+                      >
                         {' '}
                         <FaWhatsapp className='text-[#ED52DA] text-3xl mt-[5px]' />
                       </Link>
@@ -577,7 +603,11 @@ const Home = () => {
                       <FaPhone className='text-[#ED52DA] text-2xl mt-[5px]' />
                     </span>
                     <span>
-                      <Link to={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}>
+                      <Link
+                        to={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+                          message
+                        )}`}
+                      >
                         <FaWhatsapp className='text-[#ED52DA] text-3xl mt-[5px]' />
                       </Link>
                     </span>
@@ -651,19 +681,22 @@ const Home = () => {
             </h2>
             <hr className='mt-4 mb-4 md:mb-12' />
 
-          <div className='h-[200px]'>
+            <div className='h-[200px]'>
               <div className='text-zinc-500 relative pl-4 md:pl-10 mb-4 md:mb-6'>
-              <FaQuoteLeft className='absolute left-0 top-1 text-pink-200 text-xs md:text-3xl' />
-              <p className='md:text-lg text-md ' style={{ wordSpacing: '5px' }}>
-                {' '}
-                {reviews[current].text}
-              </p>
-            </div>
+                <FaQuoteLeft className='absolute left-0 top-1 text-pink-200 text-xs md:text-3xl' />
+                <p
+                  className='md:text-lg text-md '
+                  style={{ wordSpacing: '5px' }}
+                >
+                  {' '}
+                  {reviews[current].text}
+                </p>
+              </div>
 
-            <h5 className='text-lg md:text-3xl mt-6 md:mt-10 font-semibold'>
-              {reviews[current].name}
-            </h5>
-          </div>
+              <h5 className='text-lg md:text-3xl mt-6 md:mt-10 font-semibold'>
+                {reviews[current].name}
+              </h5>
+            </div>
 
             {/* Navigation Dots */}
             <div className='mt-4 md:mt-8 flex justify-center space-x-3 sticky'>
@@ -743,7 +776,7 @@ const Home = () => {
           <div>
             <iframe
               title='Gurgaon Map'
-              src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7002.272056221468!2d77.07220319321663!3d28.412800465653704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d18df8e30f84f%3A0x84bd68b6ab94ad17!2sSector%2056%2C%20Gurugram%2C%20Haryana%20122003!5e0!3m2!1sen!2sin!4v1721838393492!5m2!1sen!2sin'
+              src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.6119678956236!2d77.01226737509262!3d28.6430193756577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d187c9ddfb2d7%3A0xf9582b2ff1f908db!2sBhawani%20Enclave%2C%20Sector%209%2C%20Gurugram%2C%20Haryana%20122001!5e0!3m2!1sen!2sin!4v1733735180000!5m2!1sen!2sin'
               width='100%'
               height='400'
               allowFullScreen=''
@@ -764,36 +797,36 @@ const Home = () => {
               className='grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8'
             >
               <input
-              required
+                required
                 name='firstName'
-                  value={formData.firstName}
-                  onChange={handleChange}
+                value={formData.firstName}
+                onChange={handleChange}
                 type='text'
                 placeholder='Enter First name*'
                 className='w-full border-b border-gray-300 focus:outline-none py-2 px-4'
               />
               <input
-              required
+                required
                 name='lastName'
-                  value={formData.lastName}
-                  onChange={handleChange}
+                value={formData.lastName}
+                onChange={handleChange}
                 type='text'
                 placeholder='Enter Last Name*'
                 className='w-full border-b border-gray-300 focus:outline-none py-2 px-4'
               />
               <input
-              required
+                required
                 name='email'
-                  value={formData.email}
-                  onChange={handleChange}
+                value={formData.email}
+                onChange={handleChange}
                 type='email'
                 placeholder='Enter your Email*'
                 className='w-full border-b border-gray-300 focus:outline-none py-2 px-4'
               />
               <input
                 name='phone'
-                  value={formData.phone}
-                  onChange={handleChange}
+                value={formData.phone}
+                onChange={handleChange}
                 required
                 type='tel'
                 placeholder='Enter your Phone*'
@@ -801,8 +834,8 @@ const Home = () => {
               />
               <textarea
                 name='message'
-                 value={formData.message}
-                  onChange={handleChange}
+                value={formData.message}
+                onChange={handleChange}
                 required
                 rows='4'
                 placeholder='Enter Your Message*'

@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://www.garimadecoration.in/sitemap.xml
+Sitemap: http://www.garimaevents.in/sitemap.xml

@@ -3,7 +3,7 @@ export const homefirstSection = [
     id: '1',
     title: "Kid's Birthday",
     image: {
-      src: '/home-image/first-card1.jpg',
+      src: '/service/kids.jpg',
       alt: 'Home First Section Image-1',
     },
   },
@@ -11,7 +11,7 @@ export const homefirstSection = [
     id: '2',
     title: 'BirthDay Decoration',
     image: {
-      src: '/home-image/first-card2.jpg',
+      src: '/service/birthday.jpg',
       alt: 'Home First Section Image-2',
     },
   },
@@ -19,23 +19,23 @@ export const homefirstSection = [
     id: '3',
     title: 'Baby Shower Decoration',
     image: {
-      src: '/home-image/first-card3.jpg',
+      src: '/service/baby.jpg',
       alt: 'Home First Section Image-3',
     },
   },
-  {
-    id: '4',
-    title: 'All Party Decoration',
-    image: {
-      src: '/home-image/first-card4.jpg',
-      alt: 'Home First Section Image-4',
-    },
-  },
+  // {
+  //   id: '4',
+  //   title: 'All Party Decoration',
+  //   image: {
+  //     src: '/home-image/first-card4.jpg',
+  //     alt: 'Home First Section Image-4',
+  //   },
+  // },
   {
     id: '5',
     title: 'Aniversary Decoration',
     image: {
-      src: '/home-image/first-card5.jpg',
+      src: '/service/anniversary.jpg',
       alt: 'Home First Section Image-5',
     },
   },
@@ -49,13 +49,13 @@ export const homeHeroSection = [
       alt: 'Hero Image 1',
     },
   },
-  {
-    id: 'hero-2',
-    image: {
-      src: '/home-image/hero2.jpg',
-      alt: 'Hero Image 2',
-    },
-  },
+  // {
+  //   id: 'hero-2',
+  //   image: {
+  //     src: '/home-image/hero2.jpg',
+  //     alt: 'Hero Image 2',
+  //   },
+  // },
   {
     id: 'hero-3',
     image: {
@@ -63,13 +63,13 @@ export const homeHeroSection = [
       alt: 'Hero Image 3',
     },
   },
-  {
-    id: 'hero-4',
-    image: {
-      src: '/home-image/hero4.jpg',
-      alt: 'Hero Image 4',
-    },
-  },
+  // {
+  //   id: 'hero-4',
+  //   image: {
+  //     src: '/home-image/hero4.jpg',
+  //     alt: 'Hero Image 4',
+  //   },
+  // },
 ];
 
 
